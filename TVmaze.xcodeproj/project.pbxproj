@@ -8,23 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		356790EC28B57245001DD2E1 /* TVmazeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356790EB28B57245001DD2E1 /* TVmazeApp.swift */; };
-		356790EE28B57245001DD2E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356790ED28B57245001DD2E1 /* ContentView.swift */; };
 		356790F028B57246001DD2E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 356790EF28B57246001DD2E1 /* Assets.xcassets */; };
 		356790F328B57246001DD2E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 356790F228B57246001DD2E1 /* Preview Assets.xcassets */; };
-		356790FD28B57246001DD2E1 /* TVmazeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356790FC28B57246001DD2E1 /* TVmazeTests.swift */; };
-		3567910728B57246001DD2E1 /* TVmazeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567910628B57246001DD2E1 /* TVmazeUITests.swift */; };
-		3567910928B57246001DD2E1 /* TVmazeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567910828B57246001DD2E1 /* TVmazeUITestsLaunchTests.swift */; };
+		3567911728B584D0001DD2E1 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 3567911628B584D0001DD2E1 /* Realm */; };
+		3567911928B584D0001DD2E1 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3567911828B584D0001DD2E1 /* RealmSwift */; };
+		3567912428B598C7001DD2E1 /* ShowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567912328B598C7001DD2E1 /* ShowsView.swift */; };
+		3567912628B598EA001DD2E1 /* ShowRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567912528B598EA001DD2E1 /* ShowRowView.swift */; };
+		3567912828B5990A001DD2E1 /* ShowsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567912728B5990A001DD2E1 /* ShowsViewModel.swift */; };
+		3567912B28B59953001DD2E1 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567912A28B59953001DD2E1 /* Show.swift */; };
+		3567912E28B5998D001DD2E1 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567912D28B5998D001DD2E1 /* APIService.swift */; };
+		3567913028B599B3001DD2E1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567912F28B599B3001DD2E1 /* Constants.swift */; };
+		3567913228B599D6001DD2E1 /* URLSession+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567913128B599D6001DD2E1 /* URLSession+Utils.swift */; };
+		3567913428B599EA001DD2E1 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567913328B599EA001DD2E1 /* String+Utils.swift */; };
+		3567913628B599FC001DD2E1 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567913528B599FC001DD2E1 /* Episode.swift */; };
+		3567913828B59A31001DD2E1 /* ShowDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567913728B59A31001DD2E1 /* ShowDetailView.swift */; };
+		3567913A28B59A94001DD2E1 /* ShowDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567913928B59A94001DD2E1 /* ShowDetailViewModel.swift */; };
+		3567913C28B59AD3001DD2E1 /* EpisodeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567913B28B59AD3001DD2E1 /* EpisodeDetailView.swift */; };
+		3567913E28B59AF3001DD2E1 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567913D28B59AF3001DD2E1 /* AsyncImageView.swift */; };
+		3567914428B5A03A001DD2E1 /* MockAPIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567914028B5A03A001DD2E1 /* MockAPIServiceTests.swift */; };
+		3567914528B5A03A001DD2E1 /* ShowsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567914128B5A03A001DD2E1 /* ShowsViewModelTests.swift */; };
+		3567914628B5A03A001DD2E1 /* ShowDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567914228B5A03A001DD2E1 /* ShowDetailViewModelTests.swift */; };
+		3567914928B5A30A001DD2E1 /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567914828B5A30A001DD2E1 /* MockAPIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		356790F928B57246001DD2E1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 356790E028B57245001DD2E1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 356790E728B57245001DD2E1;
-			remoteInfo = TVmaze;
-		};
-		3567910328B57246001DD2E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 356790E028B57245001DD2E1 /* Project object */;
 			proxyType = 1;
@@ -36,14 +44,26 @@
 /* Begin PBXFileReference section */
 		356790E828B57245001DD2E1 /* TVmaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVmaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		356790EB28B57245001DD2E1 /* TVmazeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVmazeApp.swift; sourceTree = "<group>"; };
-		356790ED28B57245001DD2E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		356790EF28B57246001DD2E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		356790F228B57246001DD2E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		356790F828B57246001DD2E1 /* TVmazeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVmazeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		356790FC28B57246001DD2E1 /* TVmazeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVmazeTests.swift; sourceTree = "<group>"; };
-		3567910228B57246001DD2E1 /* TVmazeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVmazeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3567910628B57246001DD2E1 /* TVmazeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVmazeUITests.swift; sourceTree = "<group>"; };
-		3567910828B57246001DD2E1 /* TVmazeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVmazeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3567912328B598C7001DD2E1 /* ShowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsView.swift; sourceTree = "<group>"; };
+		3567912528B598EA001DD2E1 /* ShowRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRowView.swift; sourceTree = "<group>"; };
+		3567912728B5990A001DD2E1 /* ShowsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsViewModel.swift; sourceTree = "<group>"; };
+		3567912A28B59953001DD2E1 /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
+		3567912D28B5998D001DD2E1 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		3567912F28B599B3001DD2E1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3567913128B599D6001DD2E1 /* URLSession+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Utils.swift"; sourceTree = "<group>"; };
+		3567913328B599EA001DD2E1 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		3567913528B599FC001DD2E1 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		3567913728B59A31001DD2E1 /* ShowDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailView.swift; sourceTree = "<group>"; };
+		3567913928B59A94001DD2E1 /* ShowDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailViewModel.swift; sourceTree = "<group>"; };
+		3567913B28B59AD3001DD2E1 /* EpisodeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailView.swift; sourceTree = "<group>"; };
+		3567913D28B59AF3001DD2E1 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		3567914028B5A03A001DD2E1 /* MockAPIServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAPIServiceTests.swift; sourceTree = "<group>"; };
+		3567914128B5A03A001DD2E1 /* ShowsViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowsViewModelTests.swift; sourceTree = "<group>"; };
+		3567914228B5A03A001DD2E1 /* ShowDetailViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowDetailViewModelTests.swift; sourceTree = "<group>"; };
+		3567914828B5A30A001DD2E1 /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +71,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3567911928B584D0001DD2E1 /* RealmSwift in Frameworks */,
+				3567911728B584D0001DD2E1 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		356790F528B57246001DD2E1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		356790FF28B57246001DD2E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,7 +91,6 @@
 			children = (
 				356790EA28B57245001DD2E1 /* TVmaze */,
 				356790FB28B57246001DD2E1 /* TVmazeTests */,
-				3567910528B57246001DD2E1 /* TVmazeUITests */,
 				356790E928B57245001DD2E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +100,6 @@
 			children = (
 				356790E828B57245001DD2E1 /* TVmaze.app */,
 				356790F828B57246001DD2E1 /* TVmazeTests.xctest */,
-				3567910228B57246001DD2E1 /* TVmazeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +108,11 @@
 			isa = PBXGroup;
 			children = (
 				356790EB28B57245001DD2E1 /* TVmazeApp.swift */,
-				356790ED28B57245001DD2E1 /* ContentView.swift */,
-				356790EF28B57246001DD2E1 /* Assets.xcassets */,
-				356790F128B57246001DD2E1 /* Preview Content */,
+				3567911A28B5971E001DD2E1 /* Presentation */,
+				3567912228B5987D001DD2E1 /* Domain */,
+				3567912028B59793001DD2E1 /* Data */,
+				3567913F28B59B37001DD2E1 /* Utils */,
+				3567912128B59842001DD2E1 /* Resources */,
 			);
 			path = TVmaze;
 			sourceTree = "<group>";
@@ -113,18 +128,118 @@
 		356790FB28B57246001DD2E1 /* TVmazeTests */ = {
 			isa = PBXGroup;
 			children = (
-				356790FC28B57246001DD2E1 /* TVmazeTests.swift */,
+				3567914A28B5A324001DD2E1 /* Mocks */,
+				3567914028B5A03A001DD2E1 /* MockAPIServiceTests.swift */,
+				3567914228B5A03A001DD2E1 /* ShowDetailViewModelTests.swift */,
+				3567914128B5A03A001DD2E1 /* ShowsViewModelTests.swift */,
 			);
 			path = TVmazeTests;
 			sourceTree = "<group>";
 		};
-		3567910528B57246001DD2E1 /* TVmazeUITests */ = {
+		3567911A28B5971E001DD2E1 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				3567910628B57246001DD2E1 /* TVmazeUITests.swift */,
-				3567910828B57246001DD2E1 /* TVmazeUITestsLaunchTests.swift */,
+				3567911F28B59761001DD2E1 /* Common */,
+				3567911B28B5972E001DD2E1 /* Shows */,
+				3567911C28B5973C001DD2E1 /* ShowDetail */,
+				3567911D28B59746001DD2E1 /* EpisodeDetail */,
 			);
-			path = TVmazeUITests;
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3567911B28B5972E001DD2E1 /* Shows */ = {
+			isa = PBXGroup;
+			children = (
+				3567912328B598C7001DD2E1 /* ShowsView.swift */,
+				3567912528B598EA001DD2E1 /* ShowRowView.swift */,
+				3567912728B5990A001DD2E1 /* ShowsViewModel.swift */,
+			);
+			path = Shows;
+			sourceTree = "<group>";
+		};
+		3567911C28B5973C001DD2E1 /* ShowDetail */ = {
+			isa = PBXGroup;
+			children = (
+				3567913728B59A31001DD2E1 /* ShowDetailView.swift */,
+				3567913928B59A94001DD2E1 /* ShowDetailViewModel.swift */,
+			);
+			path = ShowDetail;
+			sourceTree = "<group>";
+		};
+		3567911D28B59746001DD2E1 /* EpisodeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				3567913B28B59AD3001DD2E1 /* EpisodeDetailView.swift */,
+			);
+			path = EpisodeDetail;
+			sourceTree = "<group>";
+		};
+		3567911F28B59761001DD2E1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3567913D28B59AF3001DD2E1 /* AsyncImageView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3567912028B59793001DD2E1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3567912C28B5997D001DD2E1 /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3567912128B59842001DD2E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				356790F128B57246001DD2E1 /* Preview Content */,
+				356790EF28B57246001DD2E1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3567912228B5987D001DD2E1 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3567912928B59929001DD2E1 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3567912928B59929001DD2E1 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3567912A28B59953001DD2E1 /* Show.swift */,
+				3567913528B599FC001DD2E1 /* Episode.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		3567912C28B5997D001DD2E1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3567912D28B5998D001DD2E1 /* APIService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3567913F28B59B37001DD2E1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3567912F28B599B3001DD2E1 /* Constants.swift */,
+				3567913128B599D6001DD2E1 /* URLSession+Utils.swift */,
+				3567913328B599EA001DD2E1 /* String+Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3567914A28B5A324001DD2E1 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3567914828B5A30A001DD2E1 /* MockAPIService.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +258,10 @@
 			dependencies = (
 			);
 			name = TVmaze;
+			packageProductDependencies = (
+				3567911628B584D0001DD2E1 /* Realm */,
+				3567911828B584D0001DD2E1 /* RealmSwift */,
+			);
 			productName = TVmaze;
 			productReference = 356790E828B57245001DD2E1 /* TVmaze.app */;
 			productType = "com.apple.product-type.application";
@@ -165,24 +284,6 @@
 			productReference = 356790F828B57246001DD2E1 /* TVmazeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3567910128B57246001DD2E1 /* TVmazeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3567911228B57246001DD2E1 /* Build configuration list for PBXNativeTarget "TVmazeUITests" */;
-			buildPhases = (
-				356790FE28B57246001DD2E1 /* Sources */,
-				356790FF28B57246001DD2E1 /* Frameworks */,
-				3567910028B57246001DD2E1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3567910428B57246001DD2E1 /* PBXTargetDependency */,
-			);
-			name = TVmazeUITests;
-			productName = TVmazeUITests;
-			productReference = 3567910228B57246001DD2E1 /* TVmazeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,10 +299,7 @@
 					};
 					356790F728B57246001DD2E1 = {
 						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = 356790E728B57245001DD2E1;
-					};
-					3567910128B57246001DD2E1 = {
-						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 						TestTargetID = 356790E728B57245001DD2E1;
 					};
 				};
@@ -215,13 +313,15 @@
 				Base,
 			);
 			mainGroup = 356790DF28B57245001DD2E1;
+			packageReferences = (
+				3567911528B584D0001DD2E1 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 356790E928B57245001DD2E1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				356790E728B57245001DD2E1 /* TVmaze */,
 				356790F728B57246001DD2E1 /* TVmazeTests */,
-				3567910128B57246001DD2E1 /* TVmazeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,13 +343,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3567910028B57246001DD2E1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,8 +350,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				356790EE28B57245001DD2E1 /* ContentView.swift in Sources */,
+				3567913428B599EA001DD2E1 /* String+Utils.swift in Sources */,
+				3567912B28B59953001DD2E1 /* Show.swift in Sources */,
+				3567912E28B5998D001DD2E1 /* APIService.swift in Sources */,
+				3567913C28B59AD3001DD2E1 /* EpisodeDetailView.swift in Sources */,
+				3567913228B599D6001DD2E1 /* URLSession+Utils.swift in Sources */,
+				3567912628B598EA001DD2E1 /* ShowRowView.swift in Sources */,
+				3567913628B599FC001DD2E1 /* Episode.swift in Sources */,
+				3567913A28B59A94001DD2E1 /* ShowDetailViewModel.swift in Sources */,
+				3567913E28B59AF3001DD2E1 /* AsyncImageView.swift in Sources */,
+				3567913828B59A31001DD2E1 /* ShowDetailView.swift in Sources */,
+				3567912428B598C7001DD2E1 /* ShowsView.swift in Sources */,
+				3567912828B5990A001DD2E1 /* ShowsViewModel.swift in Sources */,
 				356790EC28B57245001DD2E1 /* TVmazeApp.swift in Sources */,
+				3567913028B599B3001DD2E1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,16 +371,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				356790FD28B57246001DD2E1 /* TVmazeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		356790FE28B57246001DD2E1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3567910728B57246001DD2E1 /* TVmazeUITests.swift in Sources */,
-				3567910928B57246001DD2E1 /* TVmazeUITestsLaunchTests.swift in Sources */,
+				3567914928B5A30A001DD2E1 /* MockAPIService.swift in Sources */,
+				3567914428B5A03A001DD2E1 /* MockAPIServiceTests.swift in Sources */,
+				3567914628B5A03A001DD2E1 /* ShowDetailViewModelTests.swift in Sources */,
+				3567914528B5A03A001DD2E1 /* ShowsViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,11 +385,6 @@
 			isa = PBXTargetDependency;
 			target = 356790E728B57245001DD2E1 /* TVmaze */;
 			targetProxy = 356790F928B57246001DD2E1 /* PBXContainerItemProxy */;
-		};
-		3567910428B57246001DD2E1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 356790E728B57245001DD2E1 /* TVmaze */;
-			targetProxy = 3567910328B57246001DD2E1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -416,7 +510,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TVmaze/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TVmaze/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 73PPY9ST8Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -445,7 +539,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TVmaze/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TVmaze/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 73PPY9ST8Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -472,15 +566,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 73PPY9ST8Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.josebr.TVmazeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVmaze.app/TVmaze";
@@ -492,11 +593,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 73PPY9ST8Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.josebr.TVmazeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -504,42 +611,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVmaze.app/TVmaze";
-			};
-			name = Release;
-		};
-		3567911328B57246001DD2E1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 73PPY9ST8Z;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.josebr.TVmazeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TVmaze;
-			};
-			name = Debug;
-		};
-		3567911428B57246001DD2E1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 73PPY9ST8Z;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.josebr.TVmazeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TVmaze;
 			};
 			name = Release;
 		};
@@ -573,16 +644,31 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3567911228B57246001DD2E1 /* Build configuration list for PBXNativeTarget "TVmazeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3567911328B57246001DD2E1 /* Debug */,
-				3567911428B57246001DD2E1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3567911528B584D0001DD2E1 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3567911628B584D0001DD2E1 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3567911528B584D0001DD2E1 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		3567911828B584D0001DD2E1 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3567911528B584D0001DD2E1 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 356790E028B57245001DD2E1 /* Project object */;
 }
