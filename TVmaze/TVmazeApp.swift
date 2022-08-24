@@ -11,7 +11,7 @@ import SwiftUI
 struct TVmazeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ShowsView()
         }
     }
 }
